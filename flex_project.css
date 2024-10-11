@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%; /* 10px*/
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 110rem; /*110rem * 10 = 1100px*/
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.navbar {
+  background: #3474e6;
+  color: #fff;
+  height: 6rem;
+}
+/* This is going to target element with logo class that is nested in navbar class  */
+.navbar .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+/* This is going to target element with class container that is nested in navbar class */
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar a:hover, div.logo:hover {
+  color: lightblue;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.navbar ul li {
+  margin-left: 2rem;
+}
+
+
+header {
+  background-color: #0151cc;
+  color: white;
+  min-height: 40rem;
+}
+
+.header h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.header p {
+  margin-right: 3rem;
+ 
+}
+
+.header img {
+  max-width: 27rem;
+}
+
+.header .container {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 50vh;
+
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.box {
+  flex: 1;
+  background: #0151cc;
+  color: white;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 0.6) ;
+  padding: 15px 20px;
+}
+
+.box i {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .header p {
+    margin: 0 2rem;
+   
+  }
+
+  .header img {
+    padding: 3rem;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* If the screen is wider than 550px then flex direction will be set to row and the boxes
+    will be put next to each other */
+@media screen and (max-width: 429px) {
+  .header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .header p {
+    font-size: 1.5rem;
+  }
+  .header img {
+    height: 20rem;
+  }
+
+}
+
+
